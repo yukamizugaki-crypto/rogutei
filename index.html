@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="東川口の和食処「ろぐ亭」。市場直仕入れの新鮮な刺身、10種類以上の厳選された地酒、ウイスキーをご提供。大衆居酒屋より上質で、高級店より気軽に。静かに大人な時間を過ごせる隠れ家です。">
+    <meta name="description" content="東川口の和食処「ろぐ亭」。一口でわかる圧倒的な鮮度。本当に美味しい魚を、もっと身近に。市場直仕入れの新鮮な刺身、10種類以上の厳選された地酒、ウイスキーをご提供する大人の隠れ家です。">
     <meta name="keywords" content="ろぐ亭, 東川口, 居酒屋, 刺身, 海鮮丼, 地酒, ウイスキー, 隠れ家, 和食">
     <title>ろぐ亭 - 新鮮な刺身と銘酒を静かに愉しむ和食処 | 東川口</title>
     <!-- Google Fonts -->
@@ -11,6 +11,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Noto+Sans+JP:wght@300;400;500;700&family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    <!-- メニュー画像の事前読み込み（スライド時の表示遅延を解消） -->
+    <link rel="preload" href="img/menu1.jpg?v=2" as="image" fetchpriority="high">
+    <link rel="preload" href="img/menu2.jpg?v=2" as="image" fetchpriority="high">
+    <link rel="preload" href="img/menu3.jpg?v=2" as="image" fetchpriority="high">
+    <link rel="preload" href="img/menu4.jpg?v=2" as="image" fetchpriority="high">
+    <link rel="preload" href="img/menu5.jpg?v=2" as="image" fetchpriority="high">
+    <link rel="preload" href="img/menu6.jpg?v=2" as="image" fetchpriority="high">
 </head>
 <body>
 
@@ -43,8 +51,8 @@
     <!-- ヒーローセクション -->
     <section class="hero-section">
         <div class="hero-slideshow">
-            <div class="hero-slide" style="background-image: url('img/HERO.png');"></div>
-            <div class="hero-slide" style="background-image: url('img/HERO2.png'); animation-delay: 5s;"></div>
+            <div class="hero-slide" style="background-image: url('img/HERO.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('img/HERO2.jpg'); animation-delay: 5s;"></div>
         </div>
         <div class="hero-bg-overlay"></div>
         <div class="hero-content">
@@ -58,7 +66,7 @@
                 <h2 class="brand-name">ろぐ亭</h2>
                 <div class="brand-line"></div>
             </div>
-            <p class="hero-desc fade-in-up">大衆店より上質な空間で、高級店より心地よい時間を。</p>
+            <p class="hero-desc fade-in-up">一口でわかる圧倒的な鮮度。本当に美味しい魚を、もっと身近に。</p>
             <div class="hero-actions fade-in-up">
                 <a href="#reserve" class="btn btn-primary">ご予約・お問い合わせ</a>
                 <a href="#menu" class="btn btn-secondary">お品書きを見る</a>
@@ -72,18 +80,18 @@
             <div class="concept-grid">
                 <div class="concept-image-area reveal-left">
                     <div class="vertical-banner">
-                        <span class="vertical-text text-1">市場仕入れの新鮮な刺身</span>
+                        <span class="vertical-text text-1">市場仕入れ of 新鮮な刺身</span>
                         <span class="vertical-text text-2">大人のための静かな隠れ家</span>
                     </div>
                     <!-- 店内スライドショー -->
                     <div class="concept-slideshow hero-placeholder">
-                        <div class="concept-slide" style="background-image: url('img/店内1.png');"></div>
+                        <div class="concept-slide" style="background-image: url('img/店内1.jpg');"></div>
                         <div class="concept-slide" style="background-image: url('img/店内2.jpg'); animation-delay: 5s;"></div>
                     </div>
                 </div>
                 <div class="concept-text-area reveal-right">
                     <span class="section-subtitle">CONCEPT</span>
-                    <h2 class="section-title">大衆居酒屋より上、<br>高級居酒屋より身近に。</h2>
+                    <h2 class="section-title">一口でわかる圧倒的な鮮度。<br>本当に美味しい魚を、もっと身近に。</h2>
                     <p class="concept-lead">
                         ろぐ亭は、本当に美味しいものを落ち着いた雰囲気の中で愉しみたい方のための店です。
                     </p>
@@ -117,7 +125,7 @@
                 <div class="menu-card reveal-up">
                     <div class="menu-image-container">
                         <div class="menu-image-wrapper">
-                            <img src="img/海鮮丼.png" alt="昼の部：贅沢海鮮丼" class="menu-img">
+                            <img src="img/海鮮丼.jpg" alt="昼の部：贅沢海鮮丼" class="menu-img">
                         </div>
                     </div>
                     <div class="menu-info">
@@ -133,8 +141,8 @@
                 <div class="menu-card reveal-up" style="animation-delay: 0.1s;">
                     <div class="menu-image-container">
                         <div class="menu-image-wrapper menu-slideshow">
-                            <img src="img/お刺身.png" alt="夜の部：お刺身" class="menu-slide-img">
-                            <img src="img/お酒.png" alt="夜の部：地酒" class="menu-slide-img" style="animation-delay: 5s;">
+                            <img src="img/お刺身.jpg" alt="夜の部：お刺身" class="menu-slide-img">
+                            <img src="img/お酒.jpg" alt="夜の部：地酒" class="menu-slide-img" style="animation-delay: 5s;">
                         </div>
                     </div>
                     <div class="menu-info">
@@ -153,7 +161,7 @@
                 <div class="menu-card reveal-up" style="animation-delay: 0.2s;">
                     <div class="menu-image-container">
                         <div class="menu-image-wrapper">
-                            <img src="img/お刺身の持ち帰りお造り.png" alt="お刺身の持ち帰りお造り" class="menu-img">
+                            <img src="img/お刺身の持ち帰りお造り.jpg" alt="お刺身の持ち帰りお造り" class="menu-img">
                         </div>
                     </div>
                     <div class="menu-info">
@@ -164,6 +172,13 @@
                         <p class="menu-item-desc">ご自宅で特別な日やご家族で愉しめる、お刺身の盛り合わせを作成いたします。ご予算に合わせて対応いたします（1週間前までに要予約）。</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- 詳しくはこちらボタン -->
+            <div class="menu-more-btn-container reveal-up">
+                <button id="openMenuModal" class="btn btn-secondary menu-more-btn">
+                    詳しくはこちら
+                </button>
             </div>
 
             <!-- 貸切サービス -->
@@ -195,7 +210,7 @@
             <div class="gallery-grid">
                 <!-- ギャラリー画像 1 -->
                 <div class="gallery-item reveal-up">
-                    <img src="img/GALLERY1.png" alt="ろぐ亭 料理と空間 1" loading="lazy" class="gallery-img">
+                    <img src="img/GALLERY1.jpg" alt="ろぐ亭 料理と空間 1" loading="lazy" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>料理と空間 1</span>
                     </div>
@@ -203,7 +218,7 @@
 
                 <!-- ギャラリー画像 2 -->
                 <div class="gallery-item reveal-up" style="animation-delay: 0.1s;">
-                    <img src="img/GALLERY2.png" alt="ろぐ亭 料理と空間 2" loading="lazy" class="gallery-img">
+                    <img src="img/GALLERY2.jpg" alt="ろぐ亭 料理と空間 2" loading="lazy" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>料理と空間 2</span>
                     </div>
@@ -211,7 +226,7 @@
 
                 <!-- ギャラリー画像 3 -->
                 <div class="gallery-item reveal-up" style="animation-delay: 0.2s;">
-                    <img src="img/GALLERY3.png" alt="ろぐ亭 料理と空間 3" loading="lazy" class="gallery-img">
+                    <img src="img/GALLERY3.jpg" alt="ろぐ亭 料理と空間 3" loading="lazy" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>料理と空間 3</span>
                     </div>
@@ -219,7 +234,7 @@
 
                 <!-- ギャラリー画像 4 -->
                 <div class="gallery-item reveal-up" style="animation-delay: 0.3s;">
-                    <img src="img/GALLERY4.png" alt="ろぐ亭 料理と空間 4" loading="lazy" class="gallery-img">
+                    <img src="img/GALLERY4.jpg" alt="ろぐ亭 料理と空間 4" loading="lazy" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>料理と空間 4</span>
                     </div>
@@ -227,7 +242,7 @@
 
                 <!-- ギャラリー画像 5 -->
                 <div class="gallery-item reveal-up" style="animation-delay: 0.4s;">
-                    <img src="img/GALLERY5.png" alt="ろぐ亭 料理と空間 5" loading="lazy" class="gallery-img">
+                    <img src="img/GALLERY5.jpg" alt="ろぐ亭 料理と空間 5" loading="lazy" class="gallery-img">
                     <div class="gallery-overlay">
                         <span>料理と空間 5</span>
                     </div>
@@ -287,7 +302,7 @@
                         <div class="info-row">
                             <div class="info-label">定休日</div>
                             <div class="info-value">
-                                水曜日 不定休<br>
+                                木曜日 不定休<br>
                                 <small class="text-muted">※最新情報は<a href="https://www.instagram.com/roguteikendoubu/" target="_blank" rel="noopener noreferrer" class="info-insta-link">公式Instagram</a>をご確認ください。</small>
                             </div>
                         </div>
@@ -366,6 +381,67 @@
             </div>
         </div>
     </footer>
+
+    <!-- メニュー詳細ポップアップモーダル -->
+    <div class="menu-modal" id="menuModal">
+        <div class="menu-modal-overlay"></div>
+        <div class="menu-modal-content">
+            <button class="menu-modal-close" id="closeModal" aria-label="閉じる">&times;</button>
+            
+            <div class="menu-slider-container">
+                <div class="menu-slider-wrapper" id="menuSliderWrapper">
+                    
+                    <!-- メニュー 1 -->
+                    <div class="menu-slide-item">
+                        <img src="img/menu1.jpg?v=2" alt="メニュー 1" class="menu-slide-img">
+                    </div>
+
+                    <!-- メニュー 2 -->
+                    <div class="menu-slide-item">
+                        <img src="img/menu2.jpg?v=2" alt="メニュー 2" class="menu-slide-img">
+                    </div>
+
+                    <!-- メニュー 3 -->
+                    <div class="menu-slide-item">
+                        <img src="img/menu3.jpg?v=2" alt="メニュー 3" class="menu-slide-img">
+                    </div>
+
+                    <!-- メニュー 4 -->
+                    <div class="menu-slide-item">
+                        <img src="img/menu4.jpg?v=2" alt="メニュー 4" class="menu-slide-img">
+                    </div>
+
+                    <!-- メニュー 5 -->
+                    <div class="menu-slide-item">
+                        <img src="img/menu5.jpg?v=2" alt="メニュー 5" class="menu-slide-img">
+                    </div>
+
+                    <!-- メニュー 6 -->
+                    <div class="menu-slide-item">
+                        <img src="img/menu6.jpg?v=2" alt="メニュー 6" class="menu-slide-img">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- コントローラー（矢印とページ番号） -->
+            <div class="slider-controls">
+                <button class="slider-control-btn prev" id="prevSlide" aria-label="前へ">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                    </svg>
+                </button>
+                <div class="slider-indicator">
+                    <span id="currentSlideNum">1</span> / <span id="totalSlidesNum">6</span>
+                </div>
+                <button class="slider-control-btn next" id="nextSlide" aria-label="次へ">
+                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
 
     <!-- スクリプト -->
     <script src="script.js"></script>

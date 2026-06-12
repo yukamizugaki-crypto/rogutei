@@ -1648,14 +1648,11 @@ section {
     line-height: 1.5;
 }
 
-.menu-slide-img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.modal-menu-img {
     width: 100%;
     height: 100%;
     object-fit: contain; /* メニュー文字が切れないようにcontain */
-    z-index: 5;
+    display: block;
     background-color: var(--color-bg-cream-dark);
 }
 
